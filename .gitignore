@@ -1,7 +1,5 @@
-.vs/*
-packages/*
-RadaOnline/bin/*
-RadaOnline/obj/*
+.vs/
+packages/
+bin/
+obj/
 *.user
-RadaOnline.Queries/bin/*
-RadaOnline.Queries/obj/*
