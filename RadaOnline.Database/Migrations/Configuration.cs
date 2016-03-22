@@ -2,11 +2,11 @@ namespace RadaOnline.Database.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<RadaOnline.Database.RadaOnlineContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<RadaOnlineContext>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            this.AutomaticMigrationsEnabled = false;
         }
     }
 }

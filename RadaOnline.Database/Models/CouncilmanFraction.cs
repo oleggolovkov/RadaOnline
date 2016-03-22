@@ -8,10 +8,10 @@
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        public Councilman Councilman { get; set; }
-
-        public Fraction Fraction { get; set; }
-
         public DateTime? ValidUntil { get; set; }
+
+        public virtual Councilman Councilman { get; set; }
+
+        public virtual Fraction Fraction { get; set; }
     }
 }

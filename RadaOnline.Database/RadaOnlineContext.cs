@@ -18,6 +18,16 @@
 
         public DbSet<CouncilmanFraction> CouncilmanFractions { get; set; }
 
+        public DbSet<Council> Councils { get; set; }
+
+        public DbSet<Session> Sessions { get; set; }
+
+        public DbSet<SessionItem> SessionItems { get; set; }
+
+        public DbSet<Decision> Decisions { get; set; }
+
+        public DbSet<Vote> Votes { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();

@@ -10,6 +10,14 @@
 
         public string FullName { get; set; }
 
+        public string ProfileImage { get; set; }
+
+        public bool IsChairman { get; set; }
+
         public virtual ICollection<CouncilmanFraction> CouncilmanFractions { get; set; }
+
+        public virtual ICollection<Vote> Votes { get; set; }
+
+        public virtual Council Council { get; set; }
     }
 }
