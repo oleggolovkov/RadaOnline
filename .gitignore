@@ -2,3 +2,4 @@
 packages/*
 RadaOnline/bin/*
 RadaOnline/obj/*
+*.user
