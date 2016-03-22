@@ -3,3 +3,5 @@ packages/*
 RadaOnline/bin/*
 RadaOnline/obj/*
 *.user
+RadaOnline.Queries/bin/*
+RadaOnline.Queries/obj/*

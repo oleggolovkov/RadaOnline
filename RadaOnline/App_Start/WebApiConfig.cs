@@ -1,4 +1,4 @@
-﻿namespace RadaOnline
+﻿namespace RadaOnline.App_Start
 {
     using System.Web.Http;
 
