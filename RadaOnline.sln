@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F0319DB-2AE9-4D1F-83A8-533090FD49F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62F1904C-8EE3-4C04-BB94-D437561B355D}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RadaOnline", "src\RadaOnline\RadaOnline.xproj", "{454CB36B-D71F-4636-BA61-06E28B5FB6FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{454CB36B-D71F-4636-BA61-06E28B5FB6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454CB36B-D71F-4636-BA61-06E28B5FB6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454CB36B-D71F-4636-BA61-06E28B5FB6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454CB36B-D71F-4636-BA61-06E28B5FB6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{454CB36B-D71F-4636-BA61-06E28B5FB6FD} = {4F0319DB-2AE9-4D1F-83A8-533090FD49F5}
+	EndGlobalSection
+EndGlobal
