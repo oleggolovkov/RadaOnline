@@ -53,6 +53,10 @@
     <Compile Include="Migrations\201603221602490_Initial.Designer.cs">
       <DependentUpon>201603221602490_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201603221954548_AddInitialEntities.cs" />
+    <Compile Include="Migrations\201603221954548_AddInitialEntities.Designer.cs">
+      <DependentUpon>201603221954548_AddInitialEntities.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Council.cs" />
     <Compile Include="Models\Councilman.cs" />
@@ -74,6 +78,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201603221602490_Initial.resx">
       <DependentUpon>201603221602490_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603221954548_AddInitialEntities.resx">
+      <DependentUpon>201603221954548_AddInitialEntities.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
