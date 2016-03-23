@@ -11,6 +11,8 @@ namespace RadaOnline.App_Start
     using Ninject;
     using Ninject.Web.Common;
 
+    using RadaOnline.Common.Logging;
+    using RadaOnline.Common.Logging.Interfaces;
     using RadaOnline.Queries.Councilman;
     using RadaOnline.Queries.Councilman.Interfaces;
 
@@ -50,7 +52,18 @@ namespace RadaOnline.App_Start
 
         private static void RegisterServices(IKernel kernel)
         {
+            RegisterSingletoneServices(kernel);
+            RegisterTransientServices(kernel);
+        }
+
+        private static void RegisterSingletoneServices(IKernel kernel)
+        {
+            kernel.Bind<ILogger>().To<Logger>().InSingletonScope();
+        }
+
+        private static void RegisterTransientServices(IKernel kernel)
+        {
             kernel.Bind<IConcilmanGetListQuery>().To<ConcilmanGetListQuery>();
-        }        
+        }
     }
 }

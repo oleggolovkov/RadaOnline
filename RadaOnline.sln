@@ -15,6 +15,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadaOnline.Queries.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadaOnline.Database", "RadaOnline.Database\RadaOnline.Database.csproj", "{8DA33939-AA24-456A-86C9-18DF1ED722E5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{0435E2EC-C15F-4AF5-8AB8-9D82C5E3AB0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{B3B8583F-1CC1-4049-993D-4A8981116777}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadaOnline.Common", "RadaOnline.Common\RadaOnline.Common.csproj", "{9C26DCB3-E274-4527-A79D-B12334BB28C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +43,10 @@ Global
 		{8DA33939-AA24-456A-86C9-18DF1ED722E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DA33939-AA24-456A-86C9-18DF1ED722E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DA33939-AA24-456A-86C9-18DF1ED722E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C26DCB3-E274-4527-A79D-B12334BB28C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C26DCB3-E274-4527-A79D-B12334BB28C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C26DCB3-E274-4527-A79D-B12334BB28C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C26DCB3-E274-4527-A79D-B12334BB28C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +54,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{B53CE0D9-6E00-42C6-95FA-977C45BE6F09} = {BA3CBECE-A8C7-4E15-9298-93E6F6BE7108}
 		{C5BEAB98-0D05-4BA8-B4DF-E7F233B0131E} = {89E0A84C-C15E-4B60-83CB-57C945D5873C}
+		{8DA33939-AA24-456A-86C9-18DF1ED722E5} = {0435E2EC-C15F-4AF5-8AB8-9D82C5E3AB0D}
+		{9C26DCB3-E274-4527-A79D-B12334BB28C6} = {B3B8583F-1CC1-4049-993D-4A8981116777}
 	EndGlobalSection
 EndGlobal
