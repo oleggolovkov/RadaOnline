@@ -19,6 +19,11 @@ The purpose of this project is to collect information about voting in local coun
 |/api/councils/:id/fractions|GET|name, take, skip|List of fractions of the council|
 |/api/councilmen/:id|GET||Details of the councilman|
 |/api/fractions/:id|GET||Details of the fraction|
+|/api/councils/:id/sessions|GET|take, skip|List of sessions of the council|
+|/api/sessions/:id|GET||Details of the session|
+|/api/sessions/:id/sessionitems|GET||List of session items of the session|
+|/api/sessionitems/:id|GET||Details of the session item|
+|/api/sessionitems/:id/votes|GET||List of decisions and votes of the session items
 
 ## Dependencies
 - ASP.NET WebApi 2
