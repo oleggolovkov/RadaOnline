@@ -57,11 +57,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RadaOnline.Common\RadaOnline.Common.csproj">
+    <ProjectReference Include="..\..\Common\RadaOnline.Common\RadaOnline.Common.csproj">
       <Project>{9c26dcb3-e274-4527-a79d-b12334bb28c6}</Project>
       <Name>RadaOnline.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RadaOnline.Database\RadaOnline.Database.csproj">
+    <ProjectReference Include="..\..\Database\RadaOnline.Database\RadaOnline.Database.csproj">
       <Project>{8da33939-aa24-456a-86c9-18df1ed722e5}</Project>
       <Name>RadaOnline.Database</Name>
     </ProjectReference>
