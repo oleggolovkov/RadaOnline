@@ -48,6 +48,10 @@
     <Compile Include="Council\CouncilRetrieveQuery.cs" />
     <Compile Include="Council\Interfaces\ICouncilOverviewQuery.cs" />
     <Compile Include="Council\Interfaces\ICouncilRetrieveQuery.cs" />
+    <Compile Include="Fraction\FractionRetrieveQuery.cs" />
+    <Compile Include="Fraction\FractionOverviewQuery.cs" />
+    <Compile Include="Fraction\Interfaces\IFractionOverviewQuery.cs" />
+    <Compile Include="Fraction\Interfaces\IFractionRetrieveQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -155,15 +155,16 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Attributes\ValidateModelAttribute.cs" />
-    <Compile Include="Controllers\CouncilController.cs" />
-    <Compile Include="Controllers\CouncilmanController.cs" />
-    <Compile Include="Controllers\FractionController.cs" />
-    <Compile Include="Controllers\SessionController.cs" />
+    <Compile Include="Controllers\CouncilsController.cs" />
+    <Compile Include="Controllers\CouncilmenController.cs" />
+    <Compile Include="Controllers\FractionsController.cs" />
+    <Compile Include="Controllers\SessionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CouncilmanOverviewRequest.cs" />
     <Compile Include="Models\CouncilOverviewRequest.cs" />
+    <Compile Include="Models\FractionOverviewRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

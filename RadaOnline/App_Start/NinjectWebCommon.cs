@@ -17,6 +17,8 @@ namespace RadaOnline.App_Start
     using RadaOnline.Queries.Council.Interfaces;
     using RadaOnline.Queries.Councilman;
     using RadaOnline.Queries.Councilman.Interfaces;
+    using RadaOnline.Queries.Fraction;
+    using RadaOnline.Queries.Fraction.Interfaces;
 
     public static class NinjectWebCommon 
     {
@@ -69,6 +71,8 @@ namespace RadaOnline.App_Start
             kernel.Bind<ICouncilmanRetrieveQuery>().To<CouncilmanRetrieveQuery>();
             kernel.Bind<ICouncilOverviewQuery>().To<CouncilOverviewQuery>();
             kernel.Bind<ICouncilRetrieveQuery>().To<CouncilRetrieveQuery>();
+            kernel.Bind<IFractionOverviewQuery>().To<FractionOverviewQuery>();
+            kernel.Bind<IFractionRetrieveQuery>().To<FractionRetrieveQuery>();
         }
     }
 }

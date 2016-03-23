@@ -2,6 +2,6 @@
 {
     public interface ICouncilmanOverviewQuery
     {
-        object Execute(int? councilId, int? fractionId, string name, int take, int skip);
+        object Execute(int councilId, int? fractionId, string name, int take, int skip);
     }
 }

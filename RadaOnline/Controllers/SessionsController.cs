@@ -2,7 +2,7 @@
 
 namespace RadaOnline.Controllers
 {
-    public class FractionController : ApiController
+    public class SessionsController : ApiController
     {
     }
 }
