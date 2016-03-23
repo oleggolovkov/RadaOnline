@@ -2,7 +2,7 @@
 {
     using RadaOnline.Queries.Councilman.Interfaces;
 
-    public class ConcilmanOverviewQuery : ICouncilmanOverviewQuery
+    public class CouncilmanOverviewQuery : ICouncilmanOverviewQuery
     {
         public object Execute(int? councilId, int? fractionId, string name, int take, int skip)
         {

@@ -2,7 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
 
-    public class CouncilmanGetListRequest
+    public class CouncilmanOverviewRequest
     {
         [Required(ErrorMessage = "CouncilId is required")]
         public int? CouncilId { get; set; }

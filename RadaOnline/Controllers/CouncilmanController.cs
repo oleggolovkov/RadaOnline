@@ -21,7 +21,7 @@
         [Route("")]
         [HttpGet]
         [ValidateModel]
-        public IHttpActionResult Get([FromUri] CouncilmanGetListRequest model)
+        public IHttpActionResult Get([FromUri] CouncilmanOverviewRequest model)
         {
             const int DefaultTake = 100;
             const int DefaultSkip = 0;

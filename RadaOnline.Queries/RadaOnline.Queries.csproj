@@ -40,15 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Councilman\ConcilmanOverviewQuery.cs" />
+    <Compile Include="Councilman\CouncilmanOverviewQuery.cs" />
     <Compile Include="Councilman\CouncilmanRetrieveQuery.cs" />
     <Compile Include="Councilman\Interfaces\ICouncilmanOverviewQuery.cs" />
     <Compile Include="Councilman\Interfaces\ICouncilmanRetrieveQuery.cs" />
+    <Compile Include="Council\CouncilOverviewQuery.cs" />
+    <Compile Include="Council\CouncilRetrieveQuery.cs" />
+    <Compile Include="Council\Interfaces\ICouncilOverviewQuery.cs" />
+    <Compile Include="Council\Interfaces\ICouncilRetrieveQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Council\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

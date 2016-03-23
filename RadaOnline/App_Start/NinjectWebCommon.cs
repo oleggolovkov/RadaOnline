@@ -13,6 +13,8 @@ namespace RadaOnline.App_Start
 
     using RadaOnline.Common.Logging;
     using RadaOnline.Common.Logging.Interfaces;
+    using RadaOnline.Queries.Council;
+    using RadaOnline.Queries.Council.Interfaces;
     using RadaOnline.Queries.Councilman;
     using RadaOnline.Queries.Councilman.Interfaces;
 
@@ -63,8 +65,10 @@ namespace RadaOnline.App_Start
 
         private static void RegisterTransientServices(IKernel kernel)
         {
-            kernel.Bind<ICouncilmanOverviewQuery>().To<ConcilmanOverviewQuery>();
+            kernel.Bind<ICouncilmanOverviewQuery>().To<CouncilmanOverviewQuery>();
             kernel.Bind<ICouncilmanRetrieveQuery>().To<CouncilmanRetrieveQuery>();
+            kernel.Bind<ICouncilOverviewQuery>().To<CouncilOverviewQuery>();
+            kernel.Bind<ICouncilRetrieveQuery>().To<CouncilRetrieveQuery>();
         }
     }
 }
