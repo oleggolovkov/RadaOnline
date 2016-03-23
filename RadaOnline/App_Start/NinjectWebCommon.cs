@@ -63,7 +63,8 @@ namespace RadaOnline.App_Start
 
         private static void RegisterTransientServices(IKernel kernel)
         {
-            kernel.Bind<IConcilmanGetListQuery>().To<ConcilmanGetListQuery>();
+            kernel.Bind<ICouncilmanOverviewQuery>().To<ConcilmanOverviewQuery>();
+            kernel.Bind<ICouncilmanRetrieveQuery>().To<CouncilmanRetrieveQuery>();
         }
     }
 }
