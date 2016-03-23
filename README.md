@@ -14,11 +14,11 @@ The purpose of this project is to collect information about voting in local coun
 |Url|Method|Optional params|Operation|
 |---|---|---|---|
 |/api/councils|GET|name, take, skip|List of councils|
-|/api/councils/:id|GET||Deails of the council|
+|/api/councils/:id|GET||Details of the council|
 |/api/councils/:id/councilmen|GET|fractionid, name, take, skip|List of councilmen of the council|
 |/api/councils/:id/fractions|GET|name, take, skip|List of fractions of the council|
-|/api/councilmen/:id|GET||Deails of the councilman|
-|/api/fractions/:id|GET||Deails of the fraction|
+|/api/councilmen/:id|GET||Details of the councilman|
+|/api/fractions/:id|GET||Details of the fraction|
 
 ## Dependencies
 - ASP.NET WebApi 2
