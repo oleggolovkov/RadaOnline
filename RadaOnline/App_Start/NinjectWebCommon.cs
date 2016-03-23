@@ -13,6 +13,9 @@ namespace RadaOnline.App_Start
 
     using RadaOnline.Common.Logging;
     using RadaOnline.Common.Logging.Interfaces;
+    using RadaOnline.Database;
+    using RadaOnline.Database.Repositories;
+    using RadaOnline.Database.Repositories.Interfaces;
     using RadaOnline.Queries.Council;
     using RadaOnline.Queries.Council.Interfaces;
     using RadaOnline.Queries.Councilman;
@@ -58,11 +61,17 @@ namespace RadaOnline.App_Start
         {
             RegisterSingletoneServices(kernel);
             RegisterTransientServices(kernel);
+            RegisterRequestScopeServices(kernel);
         }
 
         private static void RegisterSingletoneServices(IKernel kernel)
         {
             kernel.Bind<ILogger>().To<Logger>().InSingletonScope();
+        }
+
+        private static void RegisterRequestScopeServices(IKernel kernel)
+        {
+            kernel.Bind<IDbContext>().To<RadaOnlineContext>().InRequestScope();
         }
 
         private static void RegisterTransientServices(IKernel kernel)
@@ -73,6 +82,8 @@ namespace RadaOnline.App_Start
             kernel.Bind<ICouncilRetrieveQuery>().To<CouncilRetrieveQuery>();
             kernel.Bind<IFractionOverviewQuery>().To<FractionOverviewQuery>();
             kernel.Bind<IFractionRetrieveQuery>().To<FractionRetrieveQuery>();
+
+            kernel.Bind<ICouncilRepository>().To<CouncilRepository>();
         }
     }
 }

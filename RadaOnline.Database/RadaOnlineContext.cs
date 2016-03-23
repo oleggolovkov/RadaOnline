@@ -5,7 +5,7 @@
 
     using RadaOnline.Database.Models;
 
-    public class RadaOnlineContext : DbContext
+    public class RadaOnlineContext : DbContext, IDbContext
     {
 
         public RadaOnlineContext() : base("RadaOnlineContext")

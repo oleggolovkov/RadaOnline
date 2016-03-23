@@ -46,6 +46,8 @@
     <Compile Include="Councilman\Interfaces\ICouncilmanRetrieveQuery.cs" />
     <Compile Include="Council\CouncilOverviewQuery.cs" />
     <Compile Include="Council\CouncilRetrieveQuery.cs" />
+    <Compile Include="Council\Dto\CouncilDetails.cs" />
+    <Compile Include="Council\Dto\CouncilItem.cs" />
     <Compile Include="Council\Interfaces\ICouncilOverviewQuery.cs" />
     <Compile Include="Council\Interfaces\ICouncilRetrieveQuery.cs" />
     <Compile Include="Fraction\FractionRetrieveQuery.cs" />
@@ -54,7 +56,16 @@
     <Compile Include="Fraction\Interfaces\IFractionRetrieveQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\RadaOnline.Common\RadaOnline.Common.csproj">
+      <Project>{9c26dcb3-e274-4527-a79d-b12334bb28c6}</Project>
+      <Name>RadaOnline.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RadaOnline.Database\RadaOnline.Database.csproj">
+      <Project>{8da33939-aa24-456a-86c9-18df1ed722e5}</Project>
+      <Name>RadaOnline.Database</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

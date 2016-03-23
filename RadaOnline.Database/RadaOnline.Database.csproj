@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IDbContext.cs" />
     <Compile Include="Migrations\201603221602490_Initial.cs" />
     <Compile Include="Migrations\201603221602490_Initial.Designer.cs">
       <DependentUpon>201603221602490_Initial.cs</DependentUpon>
@@ -71,6 +72,8 @@
     <Compile Include="Models\Vote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RadaOnlineContext.cs" />
+    <Compile Include="Repositories\CouncilRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICouncilRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
