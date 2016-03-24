@@ -1,7 +1,9 @@
 ﻿namespace RadaOnline.Queries.Fraction.Interfaces
 {
+    using RadaOnline.Queries.Fraction.Dto;
+
     public interface IFractionRetrieveQuery
     {
-        object Execute(int id);
+        FractionDetails Execute(int id);
     }
 }

@@ -1,7 +1,9 @@
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(RadaOnline.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(RadaOnline.App_Start.NinjectWebCommon), "Stop")]
+using RadaOnline;
 
-namespace RadaOnline.App_Start
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(NinjectWebCommon), "Start")]
+[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(NinjectWebCommon), "Stop")]
+
+namespace RadaOnline
 {
     using System;
     using System.Web;
@@ -85,6 +87,7 @@ namespace RadaOnline.App_Start
 
             kernel.Bind<ICouncilRepository>().To<CouncilRepository>();
             kernel.Bind<ICouncilmanRepository>().To<CouncilmanRepository>();
+            kernel.Bind<IFractionRepository>().To<FractionRepository>();
         }
     }
 }

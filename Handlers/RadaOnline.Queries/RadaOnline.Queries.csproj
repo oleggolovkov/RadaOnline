@@ -52,6 +52,8 @@
     <Compile Include="Council\Dto\CouncilItem.cs" />
     <Compile Include="Council\Interfaces\ICouncilOverviewQuery.cs" />
     <Compile Include="Council\Interfaces\ICouncilRetrieveQuery.cs" />
+    <Compile Include="Fraction\Dto\FractionDetails.cs" />
+    <Compile Include="Fraction\Dto\FractionItem.cs" />
     <Compile Include="Fraction\FractionRetrieveQuery.cs" />
     <Compile Include="Fraction\FractionOverviewQuery.cs" />
     <Compile Include="Fraction\Interfaces\IFractionOverviewQuery.cs" />

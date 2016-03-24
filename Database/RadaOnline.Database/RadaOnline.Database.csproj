@@ -74,8 +74,10 @@
     <Compile Include="RadaOnlineContext.cs" />
     <Compile Include="Repositories\CouncilmanRepository.cs" />
     <Compile Include="Repositories\CouncilRepository.cs" />
+    <Compile Include="Repositories\FractionRepository.cs" />
     <Compile Include="Repositories\Interfaces\ICouncilmanRepository.cs" />
     <Compile Include="Repositories\Interfaces\ICouncilRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IFractionRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201603221602490_Initial.resx">
