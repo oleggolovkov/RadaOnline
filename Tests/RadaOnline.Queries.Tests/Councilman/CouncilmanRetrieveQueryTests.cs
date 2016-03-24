@@ -22,7 +22,7 @@
             query.Execute(id);
 
             //Assert
-            repositoryMock.Verify(x => x.Retrieve(id), Times.Once);
+            repositoryMock.Verify(x => x.Retrieve(id), Times.Never);
         }
     }
 }
