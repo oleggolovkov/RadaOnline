@@ -30,3 +30,5 @@ The purpose of this project is to collect information about voting in local coun
 - Entity Framework Code First 6
 - Ninject
 - Log4Net
+- Moq
+- AutoFixture
