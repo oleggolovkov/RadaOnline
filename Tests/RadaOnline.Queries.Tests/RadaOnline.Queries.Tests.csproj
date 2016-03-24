@@ -60,6 +60,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Councilman\CouncilmanOverviewQueryTests.cs" />
+    <Compile Include="Councilman\CouncilmanRetrieveQueryTests.cs" />
     <Compile Include="Council\CouncilOverviewQueryTests.cs" />
     <Compile Include="Council\CouncilRetrieveQueryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

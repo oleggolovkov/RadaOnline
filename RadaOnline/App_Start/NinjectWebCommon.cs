@@ -84,6 +84,7 @@ namespace RadaOnline.App_Start
             kernel.Bind<IFractionRetrieveQuery>().To<FractionRetrieveQuery>();
 
             kernel.Bind<ICouncilRepository>().To<CouncilRepository>();
+            kernel.Bind<ICouncilmanRepository>().To<CouncilmanRepository>();
         }
     }
 }

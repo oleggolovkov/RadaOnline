@@ -15,7 +15,7 @@
             this.councilRepository = councilRepository;
         }
 
-        public object Execute(int id)
+        public CouncilDetails Execute(int id)
         {
             return
                 this.councilRepository.Retrieve(id)

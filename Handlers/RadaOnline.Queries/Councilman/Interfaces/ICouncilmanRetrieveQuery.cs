@@ -1,7 +1,9 @@
 ﻿namespace RadaOnline.Queries.Councilman.Interfaces
 {
+    using RadaOnline.Queries.Councilman.Dto;
+
     public interface ICouncilmanRetrieveQuery
     {
-        object Execute(int id);
+        CouncilmanDetails Execute(int id);
     }
 }

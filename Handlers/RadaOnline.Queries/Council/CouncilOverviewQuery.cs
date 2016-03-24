@@ -1,5 +1,6 @@
 ﻿namespace RadaOnline.Queries.Council
 {
+    using System.Collections.Generic;
     using System.Linq;
 
     using RadaOnline.Database.Repositories.Interfaces;
@@ -15,7 +16,7 @@
             this.councilRepository = councilRepository;
         }
 
-        public object Execute(string name, int take, int skip)
+        public IList<CouncilItem> Execute(string name, int take, int skip)
         {
             return
                 this.councilRepository.Overview(name, take, skip)

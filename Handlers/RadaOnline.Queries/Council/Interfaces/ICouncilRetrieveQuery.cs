@@ -1,7 +1,9 @@
 ﻿namespace RadaOnline.Queries.Council.Interfaces
 {
+    using RadaOnline.Queries.Council.Dto;
+
     public interface ICouncilRetrieveQuery
     {
-        object Execute(int id);
+        CouncilDetails Execute(int id);
     }
 }

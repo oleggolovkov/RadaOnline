@@ -72,7 +72,9 @@
     <Compile Include="Models\Vote.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RadaOnlineContext.cs" />
+    <Compile Include="Repositories\CouncilmanRepository.cs" />
     <Compile Include="Repositories\CouncilRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICouncilmanRepository.cs" />
     <Compile Include="Repositories\Interfaces\ICouncilRepository.cs" />
   </ItemGroup>
   <ItemGroup>

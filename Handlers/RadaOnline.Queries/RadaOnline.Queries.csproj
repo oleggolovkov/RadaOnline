@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Councilman\CouncilmanOverviewQuery.cs" />
     <Compile Include="Councilman\CouncilmanRetrieveQuery.cs" />
+    <Compile Include="Councilman\Dto\CouncilmanDetails.cs" />
+    <Compile Include="Councilman\Dto\CouncilmanItem.cs" />
     <Compile Include="Councilman\Interfaces\ICouncilmanOverviewQuery.cs" />
     <Compile Include="Councilman\Interfaces\ICouncilmanRetrieveQuery.cs" />
     <Compile Include="Council\CouncilOverviewQuery.cs" />
