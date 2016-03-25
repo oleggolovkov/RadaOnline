@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadaOnline", "RadaOnline\RadaOnline.csproj", "{147249B4-72BD-4AFE-98F0-14630BA02A71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadaOnline.Web", "RadaOnline.Web\RadaOnline.Web.csproj", "{147249B4-72BD-4AFE-98F0-14630BA02A71}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RadaOnline.Queries", "Handlers\RadaOnline.Queries\RadaOnline.Queries.csproj", "{B53CE0D9-6E00-42C6-95FA-977C45BE6F09}"
 EndProject
