@@ -23,6 +23,11 @@ namespace RadaOnline.Controllers
             this.fractionOverviewQuery = fractionOverviewQuery;
         }
 
+        /// <summary>
+        /// List of councils
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [Route("")]
         [HttpGet]
         public IHttpActionResult Get([FromUri] CouncilOverviewRequest model)
@@ -38,6 +43,11 @@ namespace RadaOnline.Controllers
             return this.Ok(result);
         }
 
+        /// <summary>
+        /// Details of the council
+        /// </summary>
+        /// <param name="id">councilId</param>
+        /// <returns></returns>
         [Route("{id:int}")]
         [HttpGet]
         public IHttpActionResult Get(int id)
@@ -47,6 +57,12 @@ namespace RadaOnline.Controllers
             return this.Ok(result);
         }
 
+        /// <summary>
+        /// List of councilmen of the council
+        /// </summary>
+        /// <param name="id">councilId</param>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [Route("{id:int}/Councilmen")]
         [HttpGet]
         public IHttpActionResult GetCouncilmen(int id, [FromUri] CouncilmanOverviewRequest model)
@@ -64,6 +80,12 @@ namespace RadaOnline.Controllers
             return this.Ok(result);
         }
 
+        /// <summary>
+        /// List of fractions of the council
+        /// </summary>
+        /// <param name="id">councilId</param>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [Route("{id:int}/Fractions")]
         [HttpGet]
         public IHttpActionResult GetFractions(int id, [FromUri] FractionOverviewRequest model)

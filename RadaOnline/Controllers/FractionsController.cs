@@ -14,6 +14,11 @@ namespace RadaOnline.Controllers
             this.fractionRetrieveQuery = fractionRetrieveQuery;
         }
 
+        /// <summary>
+        /// Details of the fraction
+        /// </summary>
+        /// <param name="id">fractionId</param>
+        /// <returns></returns>
         [Route("{id:int}")]
         [HttpGet]
         public IHttpActionResult Get(int id)
