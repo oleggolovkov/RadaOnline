@@ -13,11 +13,6 @@
             this.councilmanRetrieveQuery = councilmanRetrieveQuery;
         }
 
-        /// <summary>
-        /// Details of the councilman
-        /// </summary>
-        /// <param name="id">councilmanId</param>
-        /// <returns></returns>
         [Route("{id:int}")]
         [HttpGet]
         public IHttpActionResult Get(int id)

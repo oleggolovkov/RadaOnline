@@ -1,7 +1,7 @@
-﻿using System.Web.Http;
-
-namespace RadaOnline.Controllers
+﻿namespace RadaOnline.Controllers
 {
+    using System.Web.Http;
+
     using RadaOnline.Queries.Fraction.Interfaces;
 
     [RoutePrefix("api/Fractions")]
@@ -14,11 +14,6 @@ namespace RadaOnline.Controllers
             this.fractionRetrieveQuery = fractionRetrieveQuery;
         }
 
-        /// <summary>
-        /// Details of the fraction
-        /// </summary>
-        /// <param name="id">fractionId</param>
-        /// <returns></returns>
         [Route("{id:int}")]
         [HttpGet]
         public IHttpActionResult Get(int id)

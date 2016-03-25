@@ -6,35 +6,33 @@ namespace RadaOnline.Controllers
     using RadaOnline.Queries.Council.Interfaces;
     using RadaOnline.Queries.Councilman.Interfaces;
     using RadaOnline.Queries.Fraction.Interfaces;
+    using RadaOnline.Queries.Session.Interfaces;
 
     [RoutePrefix("api/Councils")]
     public class CouncilsController : ApiController
     {
+        const int DefaultTake = 100;
+        const int DefaultSkip = 0;
+
         private readonly ICouncilOverviewQuery councilOverviewQuery;
         private readonly ICouncilRetrieveQuery councilRetrieveQuery;
         private readonly ICouncilmanOverviewQuery councilmanOverviewQuery;
         private readonly IFractionOverviewQuery fractionOverviewQuery;
+        private readonly ISessionOverviewQuery sessionOverviewQuery;
 
-        public CouncilsController(ICouncilOverviewQuery councilOverviewQuery, ICouncilRetrieveQuery councilRetrieveQuery, ICouncilmanOverviewQuery councilmanOverviewQuery, IFractionOverviewQuery fractionOverviewQuery)
+        public CouncilsController(ICouncilOverviewQuery councilOverviewQuery, ICouncilRetrieveQuery councilRetrieveQuery, ICouncilmanOverviewQuery councilmanOverviewQuery, IFractionOverviewQuery fractionOverviewQuery, ISessionOverviewQuery sessionOverviewQuery)
         {
             this.councilOverviewQuery = councilOverviewQuery;
             this.councilRetrieveQuery = councilRetrieveQuery;
             this.councilmanOverviewQuery = councilmanOverviewQuery;
             this.fractionOverviewQuery = fractionOverviewQuery;
+            this.sessionOverviewQuery = sessionOverviewQuery;
         }
 
-        /// <summary>
-        /// List of councils
-        /// </summary>
-        /// <param name="model"></param>
-        /// <returns></returns>
         [Route("")]
         [HttpGet]
         public IHttpActionResult Get([FromUri] CouncilOverviewRequest model)
         {
-            const int DefaultTake = 100;
-            const int DefaultSkip = 0;
-
             var result = this.councilOverviewQuery.Execute(
                 model?.Name,
                 model?.Take ?? DefaultTake,
@@ -43,11 +41,6 @@ namespace RadaOnline.Controllers
             return this.Ok(result);
         }
 
-        /// <summary>
-        /// Details of the council
-        /// </summary>
-        /// <param name="id">councilId</param>
-        /// <returns></returns>
         [Route("{id:int}")]
         [HttpGet]
         public IHttpActionResult Get(int id)
@@ -57,19 +50,10 @@ namespace RadaOnline.Controllers
             return this.Ok(result);
         }
 
-        /// <summary>
-        /// List of councilmen of the council
-        /// </summary>
-        /// <param name="id">councilId</param>
-        /// <param name="model"></param>
-        /// <returns></returns>
         [Route("{id:int}/Councilmen")]
         [HttpGet]
         public IHttpActionResult GetCouncilmen(int id, [FromUri] CouncilmanOverviewRequest model)
         {
-            const int DefaultTake = 100;
-            const int DefaultSkip = 0;
-
             var result = this.councilmanOverviewQuery.Execute(
                 id,
                 model?.FractionId,
@@ -80,22 +64,25 @@ namespace RadaOnline.Controllers
             return this.Ok(result);
         }
 
-        /// <summary>
-        /// List of fractions of the council
-        /// </summary>
-        /// <param name="id">councilId</param>
-        /// <param name="model"></param>
-        /// <returns></returns>
         [Route("{id:int}/Fractions")]
         [HttpGet]
         public IHttpActionResult GetFractions(int id, [FromUri] FractionOverviewRequest model)
         {
-            const int DefaultTake = 100;
-            const int DefaultSkip = 0;
-
             var result = this.fractionOverviewQuery.Execute(
                 id,
                 model?.Name,
+                model?.Take ?? DefaultTake,
+                model?.Skip ?? DefaultSkip);
+
+            return this.Ok(result);
+        }
+
+        [Route("{id:int}/Sessions")]
+        [HttpGet]
+        public IHttpActionResult GetSessions(int id, [FromUri] SessionOverviewRequest model)
+        {
+            var result = this.sessionOverviewQuery.Execute(
+                id,
                 model?.Take ?? DefaultTake,
                 model?.Skip ?? DefaultSkip);
 

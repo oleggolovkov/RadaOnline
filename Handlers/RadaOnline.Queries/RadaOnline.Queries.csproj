@@ -59,6 +59,12 @@
     <Compile Include="Fraction\Interfaces\IFractionOverviewQuery.cs" />
     <Compile Include="Fraction\Interfaces\IFractionRetrieveQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session\Dto\SessionDetails.cs" />
+    <Compile Include="Session\Dto\SessionItem.cs" />
+    <Compile Include="Session\Interfaces\ISessionOverviewQuery.cs" />
+    <Compile Include="Session\Interfaces\ISessionRetrieveQuery.cs" />
+    <Compile Include="Session\SessionOverviewQuery.cs" />
+    <Compile Include="Session\SessionRetrieveQuery.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\RadaOnline.Common\RadaOnline.Common.csproj">
@@ -70,6 +76,7 @@
       <Name>RadaOnline.Database</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

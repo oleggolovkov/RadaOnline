@@ -67,6 +67,8 @@
     <Compile Include="Fraction\FractionOverviewQueryTests.cs" />
     <Compile Include="Fraction\FractionRetrieveQueryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session\SessionOverviewQueryTests.cs" />
+    <Compile Include="Session\SessionRetrieveQueryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
