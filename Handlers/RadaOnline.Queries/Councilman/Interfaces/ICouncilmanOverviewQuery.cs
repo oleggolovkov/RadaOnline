@@ -6,6 +6,6 @@
 
     public interface ICouncilmanOverviewQuery
     {
-        IList<CouncilmanItem> Execute(int? councilId, int? fractionId, string name, int take, int skip);
+        IList<CouncilmanIListtem> Execute(int? councilId, int? fractionId, string name, int take, int skip);
     }
 }

@@ -16,10 +16,10 @@
             this.sessionRepository = sessionRepository;
         }
 
-        public IList<SessionItem> Execute(int? councilId, int take, int skip)
+        public IList<SessionListItem> Execute(int? councilId, int take, int skip)
         {
             return this.sessionRepository.Overview(councilId, take, skip)
-                .Select(x => new SessionItem { Id = x.Id, Number = x.Number, BeginDate = x.BeginDate })
+                .Select(x => new SessionListItem { Id = x.Id, Number = x.Number, BeginDate = x.BeginDate })
                 .ToList();
         }
     }

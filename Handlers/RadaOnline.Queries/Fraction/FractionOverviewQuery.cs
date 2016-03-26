@@ -16,11 +16,11 @@
             this.fractionRepository = fractionRepository;
         }
 
-        public IList<FractionItem> Execute(int? councilId, string name, int take, int skip)
+        public IList<FractionListItem> Execute(int? councilId, string name, int take, int skip)
         {
             return
                 this.fractionRepository.Overview(councilId, name, take, skip)
-                    .Select(x => new FractionItem { Id = x.Id, Name = x.Name })
+                    .Select(x => new FractionListItem { Id = x.Id, Name = x.Name })
                     .ToList();
         }
     }

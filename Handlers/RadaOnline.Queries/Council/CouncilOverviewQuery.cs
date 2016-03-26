@@ -16,11 +16,11 @@
             this.councilRepository = councilRepository;
         }
 
-        public IList<CouncilItem> Execute(string name, int take, int skip)
+        public IList<CouncilListItem> Execute(string name, int take, int skip)
         {
             return
                 this.councilRepository.Overview(name, take, skip)
-                    .Select(x => new CouncilItem { Id = x.Id, Name = x.Name })
+                    .Select(x => new CouncilListItem { Id = x.Id, Name = x.Name })
                     .ToList();
         }
     }

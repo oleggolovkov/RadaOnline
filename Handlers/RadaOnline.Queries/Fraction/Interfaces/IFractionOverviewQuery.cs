@@ -6,6 +6,6 @@
 
     public interface IFractionOverviewQuery
     {
-        IList<FractionItem> Execute(int? councilId, string name, int take, int skip);
+        IList<FractionListItem> Execute(int? councilId, string name, int take, int skip);
     }
 }
