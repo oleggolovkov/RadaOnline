@@ -93,6 +93,7 @@ namespace RadaOnline
             kernel.Bind<ICouncilmanRepository>().To<CouncilmanRepository>();
             kernel.Bind<IFractionRepository>().To<FractionRepository>();
             kernel.Bind<ISessionRepository>().To<SessionRepository>();
+            kernel.Bind<ISessionItemRepository>().To<SessionItemRepository>();
         }
     }
 }
