@@ -6,6 +6,6 @@
 
     public interface ICouncilOverviewQuery
     {
-        IList<CouncilItem> Execute(string name, int take, int skip);
+        IList<CouncilListItem> Execute(string name, int take, int skip);
     }
 }

@@ -16,13 +16,13 @@
             this.councilmanRepository = councilmanRepository;
         }
 
-        public IList<CouncilmanItem> Execute(int? councilId, int? fractionId, string name, int take, int skip)
+        public IList<CouncilmanIListtem> Execute(int? councilId, int? fractionId, string name, int take, int skip)
         {
             return
                 this.councilmanRepository.Overview(councilId, fractionId, name, take, skip)
                     .Select(
                         x =>
-                        new CouncilmanItem
+                        new CouncilmanIListtem
                             {
                                 Id = x.Id,
                                 FullName = x.FullName,

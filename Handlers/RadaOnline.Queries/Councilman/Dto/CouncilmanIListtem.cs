@@ -1,6 +1,6 @@
 ﻿namespace RadaOnline.Queries.Councilman.Dto
 {
-    public class CouncilmanItem
+    public class CouncilmanIListtem
     {
         public int Id { get; set; }
 

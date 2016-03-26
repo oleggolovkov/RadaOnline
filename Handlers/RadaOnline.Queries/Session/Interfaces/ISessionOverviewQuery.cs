@@ -5,6 +5,6 @@
 
     public interface ISessionOverviewQuery
     {
-        IList<SessionItem> Execute(int? councilId, int take, int skip); 
+        IList<SessionListItem> Execute(int? councilId, int take, int skip); 
     }
 }

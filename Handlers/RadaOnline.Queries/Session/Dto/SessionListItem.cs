@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class SessionItem
+    public class SessionListItem
     {
         public int Id { get; set; }
 

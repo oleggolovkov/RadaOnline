@@ -1,6 +1,6 @@
-﻿namespace RadaOnline.Queries.Fraction.Dto
+﻿namespace RadaOnline.Queries.Council.Dto
 {
-    public class FractionItem
+    public class CouncilListItem
     {
         public int Id { get; set; }
 

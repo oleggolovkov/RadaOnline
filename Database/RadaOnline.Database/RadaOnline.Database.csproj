@@ -78,7 +78,9 @@
     <Compile Include="Repositories\Interfaces\ICouncilmanRepository.cs" />
     <Compile Include="Repositories\Interfaces\ICouncilRepository.cs" />
     <Compile Include="Repositories\Interfaces\IFractionRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISessionItemRepository.cs" />
     <Compile Include="Repositories\Interfaces\ISessionRepository.cs" />
+    <Compile Include="Repositories\SessionItemRepository.cs" />
     <Compile Include="Repositories\SessionRepository.cs" />
   </ItemGroup>
   <ItemGroup>
